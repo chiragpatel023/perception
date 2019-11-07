@@ -13,8 +13,13 @@ class HospitalsController {
     $nids = \Drupal::entityQuery('node')->condition('type','hospitals')->execute();
     $nodes =  Node::loadMultiple($nids);
     foreach ($nodes as $node) {
-$term = Term::load($node->get('field_speciality')->target_id);
-$tname = $term->getName();
+		$tname = array();
+		foreach($node->field_speciality->getValue() as $tid){
+			
+			$term = Term::load($tid['target_id']);
+			$tname[] = $term->getName();
+		}
+		
       $json_array['data'][] = array(
         'type' => $node->get('type')->target_id,
         'id' => $node->get('nid')->value,
