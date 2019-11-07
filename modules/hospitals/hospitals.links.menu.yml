@@ -1,0 +1,6 @@
+hospitals.admin:
+  title: 'Hospitals'
+  description: 'Exports hospitals data'
+  parent: system.admin_config_development
+  route_name: hospitals.content
+  weight: 100

@@ -1,0 +1,2 @@
+[07-Nov-2019 09:07:21 Europe/Berlin] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 526389248 bytes) in /home/team7/public_html/drupal8/modules/hospitals/src/Controller/HospitalsController.php on line 15
+[07-Nov-2019 09:07:28 Europe/Berlin] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 526389248 bytes) in /home/team7/public_html/drupal8/modules/hospitals/src/Controller/HospitalsController.php on line 15

@@ -1,0 +1,7 @@
+hospitals.content:
+  path: '/hospitals'
+  defaults:
+    _controller: '\Drupal\hospitals\Controller\HospitalsController::content'
+    _title: 'Hospitals'
+  requirements:
+    _permission: 'access content'
