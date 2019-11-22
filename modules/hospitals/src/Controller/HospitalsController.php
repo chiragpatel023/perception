@@ -19,7 +19,7 @@ class HospitalsController {
 			$term = Term::load($tid['target_id']);
 			$tname[] = $term->getName();
 		}
-		
+		// update taxonomy
       $json_array['data'][] = array(
         'type' => $node->get('type')->target_id,
         'id' => $node->get('nid')->value,
